@@ -1,0 +1,337 @@
+*{
+    margin: 0px;
+    font-family: 'Arvo', serif;
+}
+
+.header{
+    position:fixed;
+    left:0%;
+    top: 0%;
+    right: 0%;
+    height: 100px;
+    margin: 90px;
+    margin-top: 0%;
+    background-color:rgb(79, 163, 231);
+    display: grid;
+    grid-template-rows: 50px;
+    grid-column: 90px 10px 10px 10px 10px;
+}
+
+main{
+    padding-top: 10rem;
+}
+.logo{ 
+    margin-top: 0%;
+    width: 150px;
+    margin-left: 5px;
+    width: 100px; height: 100px;
+    transition: all 2s;
+    animation-name: paisaje-logo;
+    animation-iteration-count: 5;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}
+
+@keyframes paisaje-logo {
+   0% {
+       transform: translateX(-50);
+   }
+   50% {
+       transform: translateY(50);
+   }
+  100%{ 
+      transform:rotate(360deg);
+  }
+}
+.logo:hover {
+    height: 200px; width: 200px;
+    padding: 20px;
+    background-color: rgb(21, 218, 47);
+}
+
+
+body{
+    background-image: linear-gradient(to left, rgb(102, 219, 102),yellow,blue) ;
+}
+
+ul {display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 130px;
+    left: 200px;
+    padding-left: 100px;
+    margin: 10%;
+  }
+
+a{
+    color: black; 
+    padding: 10px;
+    font-size: 17px;
+}
+
+li{  
+    list-style-type:none;
+    color: black;
+    padding: 10px;
+    font-size: 17px;
+    width: 100px; height: 100px;
+    transition: all 2s;
+}       
+
+li:hover {
+    height: 200px; width: 200px;
+    padding: 10px;
+    background-color: rgb(220, 231, 231);
+}
+
+.menu{
+    font-size: 17px;
+    color: black;
+    margin-left: 10px;
+}
+
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    padding: 40px;
+    padding-top: 80px;
+    background-image: url(../assets/img/panel-solar1000.jpg);
+    background-repeat: no-repeat;
+    margin: 30px;
+    border: 8px solid black;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count:two;
+}
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+.tabla{
+    width: 100px;
+    padding: 80px;
+    padding-top: 30px;
+    margin-left: 400px;
+}
+
+
+table{
+    background-color: rgb(184, 243, 228);
+    margin: auto;
+    width: 50px;
+}
+
+.mainDiv{
+    display: grid;
+    grid-template-columns: 40% 30%;
+    grid-column-gap: 30px;
+    margin-left: 350px;
+    padding: 5px;
+    
+
+}
+.video{
+    padding: 20px;
+    padding-bottom: 80px;
+    width: 20px;
+    margin-left: 400px;
+}
+.trabajadores{
+    width: 400px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+.colocadores{
+    width: 400px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+p{
+    font-size: 30px;
+    padding-bottom: 200px;
+
+}
+.redes{
+    width: 60px;
+    padding-left: 20px; 
+    width: 50px;
+    height: 50px;
+    background-color: rgba(238, 223, 16, 0.9);
+    border: solid 1px;
+} 
+.redes:hover {
+    padding: 20px;
+    transform: skewY(25deg)
+}
+
+.redes-display{ 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    padding: 7px;
+    padding-left: 100px;
+
+}
+
+h3{ 
+    padding-left: 100px;
+    
+}
+
+
+.pie{
+    background-image: linear-gradient( blue,green);
+    margin: 0px;
+}
+
+
+
+@media(max-width: 780px){
+   
+    .header{
+        margin: 15px;
+        margin-top: 0%;
+        background-color:rgb(79, 163, 231);
+        height: 50px;
+    }
+    
+    main{
+        padding-top: 3rem;
+        padding-bottom: 10rem;
+    }
+    .logo{ 
+        margin-bottom: 13cm;
+        width: 50px;
+        height: 50px;
+    }
+    
+    body{
+        background-image: linear-gradient(to left, rgb(102, 219, 102),yellow,blue) ;
+    }
+    
+
+    ul {display: flex;
+        flex-direction: row;
+        height: 30px;
+        bottom: 82px;
+        left: 10px;
+        padding-left: 5px;
+        margin: 10%;
+    }
+    
+    li{
+      list-style-type:none;
+      color: black; 
+      font-size: 10px; 
+    
+    }
+
+    .menu{
+        font-size: 8px;
+        color: black;
+        margin-left: 10px;
+        
+    }
+
+    .titulo{
+        font-size: 25px;
+        text-align: center;
+        padding: 6px;
+        padding-top: 22px;
+        background-color: beige;
+        border: 5px solid black;
+    }
+
+    .cuadro{
+        width: 10px;
+        padding: 9px;
+        padding-top: 11px;
+        margin-left: -397px;
+    }
+    table{
+        background-color: rgb(248, 248, 81);
+        margin: auto;
+    }
+
+    .cuerpoTabla{
+        width: 100px;
+    }
+    .letras{
+        font-size: 10px;
+    }
+
+    .tabla{
+        width: 100px;
+        padding: 80px;
+        padding-top: 8px;
+        margin-bottom: -66px;
+    }
+    
+    .video{
+        padding: 20px;
+        padding-bottom: 5px;
+        width: 5px;
+        margin-left: 45px;
+    }
+
+    .video-ajuste{
+        height: 187px;
+        width: 288px;
+    }
+
+    .trabajadores{
+        width: 190px;
+        padding: 80px;
+        padding-bottom: 44px;
+        margin-left: -328px;
+        margin-bottom: -12px;
+    }
+    .colocadores{
+        width: 189px;
+        padding: 102px;
+        padding-bottom: 12px;
+        margin-left: -348px;
+        margin-bottom: -29px;
+    }
+    p{
+        font-size: 15px;
+        padding-bottom: 34px;
+        position: relative;
+        margin-left: -341px;
+        padding-right: 32px;
+    
+    }
+    
+    .redes{
+        width: 40px;
+        padding-left: 20px; 
+    }
+    
+    .redes-display{ 
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+        padding: 7px;
+        padding-left: 100px;
+    
+    }
+    
+    h3{ 
+        padding-left: 17px;
+        
+    }
+    
+    
+    .pie{
+        background-image: linear-gradient( blue,green);
+        margin: 0px;
+        margin-bottom: 0px;
+     
+    }
+    
+}
